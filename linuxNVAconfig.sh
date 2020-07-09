@@ -19,9 +19,9 @@ sudo systemctl restart bgpd
 sudo apt install strongswan -y
 sudo mv /etc/ipsec.conf /etc/ipsec.conf.bak
 sudo mv /etc/ipsec.secrets /etc/ipsec.secrets.bak
-sudo wget https://raw.githubusercontent.com/erjosito/azure-wan-lab/master/ipsec.conf -P /etc/
-sudo wget https://raw.githubusercontent.com/erjosito/azure-wan-lab/master/ipsec.secrets -P /etc/
-sudo wget https://raw.githubusercontent.com/erjosito/azure-wan-lab/master/ipsec-notify.sh -P /usr/local/sbin/
+sudo wget https://raw.githubusercontent.com/dmauser/LinuxNVA/master/ipsec.conf -P /etc/
+sudo wget https://raw.githubusercontent.com/dmauser/LinuxNVA/master/ipsec.secrets -P /etc/
+sudo wget https://raw.githubusercontent.com/dmauser/LinuxNVA/master/ipsec-notify.sh -P /usr/local/sbin/
 sudo chmod 644 /etc/ipsec.conf
 sudo chmod 600 /etc/ipsec.secrets
 sudo chmod 755 /usr/local/sbin/ipsec-notify.sh
